@@ -84,12 +84,12 @@ nav ul li:nth-child(1) {
 }
 
 .navigation a:hover {
-    color: #D2042D;
+    color: #0b5394;
     opacity: 0.7;
 }
 
 .active {
-    border-bottom: 3.5px solid #D2042D;
+    border-bottom: 3.5px solid #0b5394;
     padding-bottom: 5px;
 }
 
@@ -119,7 +119,7 @@ div.responsive a {
   }
 
 div.responsive a:hover {
-    color: #D2042D;
+    color: #0b5394;
     opacity: 0.7;
 }
 
@@ -147,9 +147,9 @@ section.hero {
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
-    color: #D2042D;
+    color: #0b5394;
     background-image: url(../images/hero.jpg);
-    background-color: black;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -191,13 +191,13 @@ section.hero .sub-heading {
 }
 
 .button {
-    background-color: #D2042D;
-    color: #000000 !important;
+    background-color: #0b5394;
+    color: #fff !important;
 }
 
 .button:hover {
-    background-color: #D2042D;
-    border-color: #D2042D;
+    background-color: #000;
+    border-color: #000;
 }
 
 /*-----  TYPES OF RENTALS -------*/
@@ -207,7 +207,7 @@ section.hero .sub-heading {
     text-align: center;
     padding: 55px 0 0 35px;
     margin: 0;
-    color: #D2042D;
+    color: #0b5394;
 }
 
 /*---
@@ -263,7 +263,7 @@ hr {
     text-align: center;
     padding: 40px 0 25px 35px;
     margin: 0;
-    color: #D2042D;
+    color: #fff;
 }
 
 .current-weather {
@@ -273,7 +273,7 @@ hr {
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: url(../images/current-weather.jpg);
-    background-color: black;
+    background-color: #0b5394;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -367,15 +367,15 @@ hr {
 
 .contact-box {
     max-width: 100%;
-    background-color: black;
+    background-color: #0b5394;
     padding: 35px;
-    color: #D2042D;
+    color: #fff;
     font-size: 15px;
     margin-top: 0;
 }
 
 .get-in-touch {
-    color: #D2042D;
+    color: #fff;
     font-size: 24px;
 }
 
@@ -397,8 +397,8 @@ hr {
 
 /*-----  Footer -------*/
 footer {
-    background-color: #1f1f1f;
-    color: #D2042D;
+    background-color: #0b5394;
+    color: #fff;
     text-align: center;
     font-size: 0.75rem;
     font-family: 'Open Sans', sans-serif;
