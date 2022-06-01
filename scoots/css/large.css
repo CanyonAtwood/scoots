@@ -44,6 +44,7 @@
     }
   
     section.hero {
+      background: url("../images/beach.jpg");
       display: block;
       padding-top: 10.5rem;
       padding-bottom: 6rem;
@@ -106,6 +107,7 @@
   
     .weather h2 {
       font-size: 2rem;
+      color: blue;
     }
   
     .weather-summary {

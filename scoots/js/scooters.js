@@ -1,57 +1,52 @@
-const myURL = 'data/vehicles.json';
-
-fetch(myURL)
-  .then((response) => response.json())
-  .then((prices) => {
-    console.log(prices);
-
-
-    //Vehicle name 
-    document.getElementById('met-name').textContent = prices.vehicles[0].name;
-    document.getElementById('dio-name').textContent = prices.vehicles[1].name;
-    document.getElementById('pcx-name').textContent = prices.vehicles[2].name;
-    document.getElementById('atv-name').textContent = prices.vehicles[3].name;
-    document.getElementById('4door-name').textContent = prices.vehicles[4].name;
-    document.getElementById('2door-name').textContent = prices.vehicles[5].name;
-
-    //Number of persons allowed 
-    document.getElementById('met-max').textContent = prices.vehicles[0].max_persons;
-    document.getElementById('dio-max').textContent = prices.vehicles[1].max_persons;
-    document.getElementById('pcx-max').textContent = prices.vehicles[2].max_persons;
-    document.getElementById('atv-max').textContent = prices.vehicles[3].max_persons;
-    document.getElementById('4door-max').textContent = prices.vehicles[4].max_persons;
-    document.getElementById('2door-max').textContent = prices.vehicles[5].max_persons;
-
-    //Price for reserved half day
-    document.getElementById('res-met-half').textContent = prices.vehicles[0].res_half;
-    document.getElementById('res-dio-half').textContent = prices.vehicles[1].res_half;
-    document.getElementById('res-pcx-half').textContent = prices.vehicles[2].res_half;
-    document.getElementById('res-atv-half').textContent = prices.vehicles[3].res_half;
-    document.getElementById('res-4door-half').textContent = prices.vehicles[4].res_half;
-    document.getElementById('res-2door-half').textContent = prices.vehicles[5].res_half;
-
-    //Price for reserved full day
-    document.getElementById('res-met-full').textContent = prices.vehicles[0].res_full;
-    document.getElementById('res-dio-full').textContent = prices.vehicles[1].res_full;
-    document.getElementById('res-pcx-full').textContent = prices.vehicles[2].res_full;
-    document.getElementById('res-atv-full').textContent = prices.vehicles[3].res_full;
-    document.getElementById('res-4door-full').textContent = prices.vehicles[4].res_full;
-    document.getElementById('res-2door-full').textContent = prices.vehicles[5].res_full;
-
-    //Price for walk ins half day
-    document.getElementById('in-met-half').textContent = prices.vehicles[0].in_half;
-    document.getElementById('in-dio-half').textContent = prices.vehicles[1].in_half;
-    document.getElementById('in-pcx-half').textContent = prices.vehicles[2].in_half;
-    document.getElementById('in-atv-half').textContent = prices.vehicles[3].in_half;
-    document.getElementById('in-4door-half').textContent = prices.vehicles[4].in_half;
-    document.getElementById('in-2door-half').textContent = prices.vehicles[5].in_half;
-
-    //Price for walk ins full day
-    document.getElementById('in-met-full').textContent = prices.vehicles[0].in_full;
-    document.getElementById('in-dio-full').textContent = prices.vehicles[1].in_full;
-    document.getElementById('in-pcx-full').textContent = prices.vehicles[2].in_full;
-    document.getElementById('in-atv-full').textContent = prices.vehicles[3].in_full;
-    document.getElementById('in-4door-full').textContent = prices.vehicles[4].in_full;
-    document.getElementById('in-2door-full').textContent = prices.vehicles[5].in_full;
-
-  });
+{
+  vehicles [
+    {
+      "name": "Honda Metro Scooter",
+      "max_persons": "1",
+      "res_half": "$20",
+      "res_full": "$30",
+      "in_half": "$25",
+      "in_full": "$35"
+    },
+    {
+      "name": "Honda Dio Scooter",
+      "max_persons": "2",
+      "res_half": "$30",
+      "res_full": "$40",
+      "in_half": "$35",
+      "in_full": "$45"
+    },
+    {
+      "name": "Honda PCX150 Scooter",
+      "max_persons": "2",
+      "res_half": "$40",
+      "res_full": "$50",
+      "in_half": "$45",
+      "in_full": "$55"
+    },
+    {
+      "name": "Honda Pioneer ATV",
+      "max_persons": "4",
+      "res_half": "$50",
+      "res_full": "$70",
+      "in_half": "$60",
+      "in_full": "$80"
+    },
+    {
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "max_persons": "5",
+      "res_half": "$70",
+      "res_full": "$100",
+      "in_half": "$85",
+      "in_full": "$125"
+    },
+    {
+      "name": "Jeep Wrangler - 2 door",
+      "max_persons": "4",
+      "res_half": "$60",
+      "res_full": "$85",
+      "in_half": "$70",
+      "in_full": "$90"
+    } 
+  ]
+}

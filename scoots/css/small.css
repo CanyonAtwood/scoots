@@ -37,7 +37,6 @@ header {
     justify-content: space-between;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
 }
-
 div.logo-box {
     display: flex;
     align-items: center;
@@ -147,9 +146,9 @@ section.hero {
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
-    color: #0b5394;
+    color: #fff;
     background-image: url(../images/hero.jpg);
-    background-color: #fff;
+    background-color: #0b5394;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -263,7 +262,7 @@ hr {
     text-align: center;
     padding: 40px 0 25px 35px;
     margin: 0;
-    color: #fff;
+    color: #0b5394;
 }
 
 .current-weather {
