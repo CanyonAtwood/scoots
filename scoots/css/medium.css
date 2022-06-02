@@ -61,6 +61,8 @@
 
     .container {
         max-width: 100%;
+        background-color: lightblue;
+        padding: 50px;
     }
 
     section.hero .hero-heading {

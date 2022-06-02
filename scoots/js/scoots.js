@@ -84,7 +84,7 @@ function toggleMenu() {
   
     });
   
-  
+  console.log('json works')
   //Accordion Panel -- Terms and Conditions
   
   var acc = document.getElementsByClassName("accordion");
@@ -103,5 +103,26 @@ function toggleMenu() {
       } else {
         panel.style.display = "block";
       }
+    });
+
+    // rental vehicles
+  const localURL ="./scooters.JSON";
+  
+  fetch(localURL)
+  
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+  
+      // Current condition
+      document.getElementById("curr-condi").textContent = jsObject.scooters[0].main;
+  
+      // Current temperature
+      let temp = Math.round(jsObject.main.temp);
+      document.getElementById("curr-temp").textContent = temp;
+  
+      // Current humidity
+      document.getElementById("humidity").textContent = jsObject.main.humidity;
+    
     });
   }

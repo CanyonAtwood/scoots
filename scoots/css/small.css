@@ -162,6 +162,8 @@ section.hero {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color: lightblue;
+    padding: 50px;
 }
 
 section.hero .hero-heading {
