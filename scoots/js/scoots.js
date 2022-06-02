@@ -106,7 +106,7 @@ function toggleMenu() {
     });
 
     // rental vehicles
-  const localURL ="./scooters.JSON";
+  const localURL ="https://canyonatwood.github.io/scoots/scoots/data/scooters.JSON";
   
   fetch(localURL)
   
@@ -115,7 +115,47 @@ function toggleMenu() {
         console.log(jsObject);
   
       // Current condition
-      document.getElementById("curr-condi").textContent = jsObject.scooters[0].main;
+      document.getElementById("met-name").textContent = jsObject.vehicles[0].name;
+      document.getElementById("met-max").textContent = jsObject.vehicles[0].max_persons;
+      document.getElementById("res-met-half").textContent = jsObject.vehicles[0].res_half;
+      document.getElementById("res-met-full").textContent = jsObject.vehicles[0].res_full;
+      document.getElementById("in-met-half").textContent = jsObject.vehicles[0].in_half;
+      document.getElementById("in-met-full").textContent = jsObject.vehicles[0].in_full;
+
+      document.getElementById("dio-name").textContent = jsObject.vehicles[1].name;
+      document.getElementById("dio-max").textContent = jsObject.vehicles[1].max_persons;
+      document.getElementById("res-dio-half").textContent = jsObject.vehicles[1].res_half;
+      document.getElementById("res-dio-full").textContent = jsObject.vehicles[1].res_full;
+      document.getElementById("in-dio-half").textContent = jsObject.vehicles[1].in_half;
+      document.getElementById("in-dio-full").textContent = jsObject.vehicles[1].in_full;
+
+      document.getElementById("pcx-name").textContent = jsObject.vehicles[2].name;
+      document.getElementById("pcx-max").textContent = jsObject.vehicles[2].max_persons;
+      document.getElementById("res-pcx-half").textContent = jsObject.vehicles[2].res_half;
+      document.getElementById("res-pcx-full").textContent = jsObject.vehicles[2].res_full;
+      document.getElementById("in-pcx-half").textContent = jsObject.vehicles[2].in_half;
+      document.getElementById("in-pcx-full").textContent = jsObject.vehicles[2].in_full;
+
+      document.getElementById("atv-name").textContent = jsObject.vehicles[3].name;
+      document.getElementById("atv-max").textContent = jsObject.vehicles[3].max_persons;
+      document.getElementById("res-atv-half").textContent = jsObject.vehicles[3].res_half;
+      document.getElementById("res-atv-full").textContent = jsObject.vehicles[3].res_full;
+      document.getElementById("in-atv-half").textContent = jsObject.vehicles[3].in_half;
+      document.getElementById("in-atv-full").textContent = jsObject.vehicles[3].in_full;
+
+      document.getElementById("4door-name").textContent = jsObject.vehicles[4].name;
+      document.getElementById("4door-max").textContent = jsObject.vehicles[4].max_persons;
+      document.getElementById("res-4door-half").textContent = jsObject.vehicles[4].res_half;
+      document.getElementById("res-4door-full").textContent = jsObject.vehicles[4].res_full;
+      document.getElementById("in-4door-half").textContent = jsObject.vehicles[4].in_half;
+      document.getElementById("in-4door-full").textContent = jsObject.vehicles[4].in_full;
+
+      document.getElementById("2door-name").textContent = jsObject.vehicles[5].name;
+      document.getElementById("2door-max").textContent = jsObject.vehicles[5].max_persons;
+      document.getElementById("res-2door-half").textContent = jsObject.vehicles[5].res_half;
+      document.getElementById("res-2door-full").textContent = jsObject.vehicles[5].res_full;
+      document.getElementById("in-2door-half").textContent = jsObject.vehicles[5].in_half;
+      document.getElementById("in-2door-full").textContent = jsObject.vehicles[5].in_full;
   
       // Current temperature
       let temp = Math.round(jsObject.main.temp);
